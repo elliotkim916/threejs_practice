@@ -25,6 +25,9 @@ document.body.appendChild( renderer.domElement);
 // To create a cube, we need a BoxGeometry (contains all the vertices and faces of the cube).
 // Also need a material to color it.
 // Also need a Mesh (an object that takes a geometry & applies material to it, which we can then insert to our scene & move freely around).
+// vertices: points of intersection between 3 edges
+// edges: an edge where 2 faces meet
+// faces: polygons that make up the face of the model
 let geometry = new THREE.BoxGeometry( 1, 1, 1 );
 let material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
 let cube = new THREE.Mesh(geometry, material);
