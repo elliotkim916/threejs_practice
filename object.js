@@ -62,7 +62,6 @@ let ground_mesh = new THREE.Mesh(
 ground_mesh.receiveShadow = true;
 scene.add(ground_mesh);
 
-// Mesh is created from the geometry & material, then added to scene
 // let plane = new THREE.Mesh(
 //   new THREE.PlaneGeometry(5, 5, 5, 5),
 //   new THREE.MeshBasicMaterial({
@@ -73,6 +72,7 @@ scene.add(ground_mesh);
 // plane.rotateX(Math.PI/2);
 // scene.add(plane);
 
+// Mesh is created from the geometry & material, then added to scene
 // We need a Mesh, an object that takes a Geometry and applies a Material to it, which we can insert into our scene & move freely around.
 let shape_one = new THREE.Mesh(
   // Geometry is any object that contains all the points (vertices) & fill (faces) of the cube.
