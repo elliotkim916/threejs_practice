@@ -1,3 +1,5 @@
+/* global THREE */
+
 'use strict';
 
 // Create a scene which will hold all our meshes to be rendered
