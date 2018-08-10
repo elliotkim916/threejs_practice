@@ -91,7 +91,7 @@ let shape_one = new THREE.Mesh(
 shape_one.position.y += 10;
 shape_one.rotateZ(Math.PI/3);
 shape_one.castShadow = true;
-shape_one.receiveShadow = true;
+// shape_one.receiveShadow = true;
 scene.add(shape_one);
 
 let shape_two = new THREE.Mesh(
@@ -107,13 +107,15 @@ shape_two.position.y += 5;
 shape_two.position.x += 15;
 shape_two.rotateZ(Math.PI/5);
 shape_two.castShadow = true;
-shape_two.receiveShadow = true;
+// shape_two.receiveShadow = true;
 scene.add(shape_two);
 // Render the scene/camera combination
 renderer.render(scene, camera);
 
 // Add an orbit control which allows you to move around the scene
 let controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.target = new THREE.Vector3(0, 15, 0); // keeps the shadow when I move the mouse to see below the object
+controls.maxPolarAngle = Math.PI / 2; // this won't let me move/see underneath the objects
 controls.addEventListener('change', function() {
   renderer.render(scene, camera);
 });
