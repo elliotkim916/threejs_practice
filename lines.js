@@ -1,3 +1,5 @@
+/* global THREE */
+
 // Drawing Lines
 
 'use strict';

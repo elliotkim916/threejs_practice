@@ -1,3 +1,5 @@
+/* global THREE */
+
 'use strict';
 
 let scene = new THREE.Scene();
