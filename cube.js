@@ -1,3 +1,5 @@
+/* global THREE */
+
 'use strict';
 
 // CREATING THE SCENE
